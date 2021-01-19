@@ -1,0 +1,20 @@
+POST http://localhost:5002/post/add
+Content-Type: application/json
+
+{
+    "post_id":"kill-animal",
+    "user_id":"1qasas2sa",
+    "name":"animals",
+    "title":"The Lion King",
+    "content":"The lion is a species in the family Felidae and a member of the genus Panthera. It is most recognisable for its muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions have a prominent mane",
+    "mime_type":"txt",
+    "status":"1",
+    "post_status":"1",
+    "post_count":0,
+    "post_parent":"",
+    "meta":[]
+}
+###
+GET http://localhost:5002/post/findAll
+###
+GET http://localhost:5002/post/s/the-lion-king
