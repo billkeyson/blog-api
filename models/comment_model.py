@@ -21,7 +21,7 @@ class CommentModel():
     
     @classmethod
     def add_comment(cls,user_id,post_id,author,author_email,author_ip,author_url,\
-        content,approved,content_type,meta,parent_id=''):
+        content,content_type,meta,parent_id=''):
         comment = {}
         comment['id'] = datetime.datetime.now().strftime('%Y%m%d') + \
                      uuid.uuid4().urn[9:].replace('-', '').upper()
