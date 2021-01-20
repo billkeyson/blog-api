@@ -12,12 +12,16 @@ from flask_cors import CORS
 
 from routes import (
     user_route,
-    post_route)
+    post_route,
+    comment_route
+    )
 
 
 app = Flask(__name__)
 app.register_blueprint(user_route.routes)
 app.register_blueprint(post_route.routes)
+app.register_blueprint(comment_route.routes)
+
 
 # cors fix
 CORS(app)

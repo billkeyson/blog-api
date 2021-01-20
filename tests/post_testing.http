@@ -15,6 +15,26 @@ Content-Type: application/json
     "meta":[]
 }
 ###
+
+POST http://localhost:5002/comment/add
+Content-Type: application/json
+
+{
+    "post_id":"the-lion-king",
+    "user_id":"1qasas2sa",
+    "author":"animals",
+    "author_email":"anaymous@mail.com",
+    "content":"Lions do do not go wating and whating around aimlessly, so how do you rate them",
+    "author_ip":"129.0.0.1",
+    "author_url":"",
+    "content_type":"txt",
+    "meta":[]
+}
+###
 GET http://localhost:5002/post/findAll
 ###
 GET http://localhost:5002/post/s/the-lion-king
+
+
+###
+GET http://localhost:5002/comment/the-lion-king
